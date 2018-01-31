@@ -1,0 +1,16 @@
+<section class="contact" ng-hide="messageSent">
+    <h1>Fill in the form below, and we'll get back to you within 24 hours:</h1>
+    <form id="contact" name="contact" ng-submit="send(contact)" ng-validate="validationOptions">
+        <form-input title="Your Name" name="name" value="model.name"></form-input>
+        <form-input title="Email" name="email" value="model.email"></form-input>
+        <form-input title="Telephone" name="phone" value="model.phone" placeholder="+375 xx xxxxxxx"></form-input>
+        <form-input title="Message" name="message" type="textarea" value="model.message"></form-input>
+        <button class="center">Send</button>
+    </form>
+</section>
+
+<section class="contact" ng-show="messageSent">
+    <h1>{{model.name}},
+Thank you for contacting!</h1>
+    <button class="center" ng-click="reset()">Write more</button>
+</section>

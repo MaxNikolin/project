@@ -1,0 +1,304 @@
+. {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color:  #000000;
+    margin-top: 80px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+}
+a:hover  {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+}
+p {
+    text-indent: 20px;
+    text-align: justify;
+    margin: 0px;
+}
+form {
+	width: 80%;
+	margin: -50px auto;
+}
+
+input, textarea, button {
+	border: 1px solid #444444;
+	border-radius: 5px;
+	padding: 5px;
+
+}
+
+form fieldset {
+	margin: 10px 0;
+	border: none;
+}
+
+form fieldset label {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+	font-size: 18px;
+}
+
+form fieldset input, form fieldset textarea {
+	display: inline-block;
+	width: 73%;
+	max-width: 73%;
+	min-width: 73%;
+	box-sizing: border-box;
+}
+
+form button {
+	display: block;
+	min-width: 120px;
+	margin: 100 auto;
+	cursor: pointer;
+    background-color: white;
+
+}
+
+form button:hover{
+	transform: scale(1.05);
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix {
+    clear: both;
+}
+.center {
+	display: block;
+	margin: 100px auto;
+}
+.error {
+	color: #ff0000;
+	border-color: #ff0000;
+}
+.pointer {
+	cursor: pointer;
+}
+
+header {
+    background-color: #1f1e1e;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+header .content {
+    height: 100%;
+}
+header .logo {
+    margin-right: 60px;
+    font-family: Courier New, monospace;
+    font-style: italic sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header .logo h1 {
+    font-size: 22px;
+    margin: 45px 180 0;
+    font-weight: 800;
+    text-shadow: #444444 2px 2px;
+    font-size: 22pt;
+}
+header nav {
+     text-align: right;
+     font-family: Bradley Hand, cursive;
+     margin: -50 30;
+}
+header nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0px 32px 10px 5;
+    padding: 5px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,0);
+    font-size: 17pt;
+}
+
+
+img {
+    margin: 250px 140px 0px;
+	width: 220px;
+	max-height: 600px;
+
+}
+
+h2 {
+    float: right;
+	color: white;
+    margin: -150 90 0 550;
+    text-align: center;
+    font-family: "Hind", sans-serif;
+
+}
+@media screen and (max-width: 568px)
+.about-front {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.5em;
+    margin-bottom: 3em;
+    max-width: 80vw;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+.content .about img {
+	display: block;
+	width: 250px;
+	margin-right: 15px;
+}
+.content .about table {
+	font-size: 18px;
+}
+.content .about iframe {
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.content .about table td:first-child {
+	font-weight: 800;
+	padding-right: 10px;
+}
+.content .about .video {
+	position: relative;
+}
+
+.content .about .video i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.content .hobbylist .hobby {
+	float: left;
+	width: 49.5%;
+	padding: 0 7px;
+	box-sizing: border-box;
+	vertical-align: top;
+	border: 1px solid #444444;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: linear-gradient(#dddddd, #ffffff);
+	max-height: 380px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.content .hobbylist .hobby:nth-child(even) {
+	float: right;
+}
+.content .hobbylist .hobby:hover {
+	background: linear-gradient(#cccccc, #dddddd);
+	border: 1px solid #888888;
+}
+.hobby p img {
+	width: 48%;
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+.hobby p img:nth-child(odd) {
+	float: right;
+	margin: 10px 0 10px 10px;
+}
+
+.gallery .images img {
+	display: inline-block;
+	margin: 5px 7px;
+	cursor: pointer;
+	width: 250px;
+	height: 300px;
+}
+
+.content .blog img {
+	width: 250px;
+	margin-right: 15px;
+}
+
+.content .blog .blog-content {
+	display: none;
+}
+
+.modalContent {
+	position: relative;
+}
+
+.modalContent #arrowLeft, .modalContent #arrowRight {
+	position: absolute;
+	padding: 0 50px;
+	cursor: pointer;
+	height: 100%;
+	top: 0;
+}
+
+.modalContent #arrowLeft:hover, .modalContent #arrowRight:hover {
+	background: rgba(100, 100, 200, 0.5);
+}
+
+.modalContent #arrowRight {
+	right: 0;
+}
+
+.modalContent #arrowLeft i, .modalContent #arrowRight i {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	display: none;
+}
+
+.modalContent #arrowLeft:hover i, .modalContent #arrowRight:hover i {
+	display: inline-block;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 98%;
+  height: 80px;
+  padding: 1%;
+  color: white;
+  text-align: center;
+  background-color: #1f1e1e;
+  font-family: Courier New, monospace;
+  font-style: italic sans-serif;
+}
+.footer p {
+	margin: 10px;
+}
+.social {
+    padding: 1.5%;
+
+}
+
